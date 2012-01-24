@@ -9,6 +9,12 @@ svn:wc:ra_dav:version-url
 V 102
 /repository/!svn/ver/36511/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/CommonUtil.m
 END
+DefaultsManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/!svn/ver/36517/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/DefaultsManager.h
+END
 DBUtil.h
 K 25
 svn:wc:ra_dav:version-url
@@ -26,6 +32,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 96
 /repository/!svn/ver/36503/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/README
+END
+DefaultsManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repository/!svn/ver/36517/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/DefaultsManager.m
 END
 DBUtil.m
 K 25

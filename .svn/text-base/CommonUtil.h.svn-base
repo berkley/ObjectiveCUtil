@@ -2,6 +2,7 @@
 //  CommonUtil.h
 //
 //  Created by Chad Berkley on 1/24/12.
+//  cberkley (at) gmail.com
 //  
 //  Anyone is free to use or distribute this code.  There is no warranty
 //  or license.  You assume all risk in using this code.  It is made freely

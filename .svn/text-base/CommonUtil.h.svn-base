@@ -115,4 +115,10 @@
                                      toPoint:(CLLocationCoordinate2D)point2
                                   forMapView:(MKMapView*)mapView;
 
+//get the current Date as a string for a given timezone with the given format
++ (NSString*)displayCurrentDateForTimezone:(NSTimeZone*)timezone withFormat:(NSString*)format;
+
+//get the current Date as a string for a given timezone with the format @"yyyy-MM-dd HH:mm ZZZZ"
++ (NSString*)displayCurrentDateForTimezone:(NSTimeZone*)timezone;
+
 @end

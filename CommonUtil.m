@@ -484,4 +484,20 @@
     free(coords);
 }
 
++ (NSString*)displayCurrentDateForTimezone:(NSTimeZone*)timezone withFormat:(NSString*)format
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:timezone];
+    [formatter setDateFormat:format];
+    NSDate *currentDate = [NSDate date];
+    NSString *currentDateStr = [formatter stringFromDate:currentDate];
+    [formatter release];
+    return currentDateStr;
+}
+
++ (NSString*)displayCurrentDateForTimezone:(NSTimeZone*)timezone
+{
+    return [CommonUtil displayCurrentDateForTimezone:timezone withFormat:@"yyyy-MM-dd HH:mm ZZZZ"];
+}
+
 @end

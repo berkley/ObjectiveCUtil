@@ -10,8 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 
-#define SQLITE_FILE @"services.sqlite"
-#define COUNTRIES_TABLE @"countries"
+#define SQLITE_FILE @"db.sqlite"
 
 @interface DBUtil : NSObject 
 {

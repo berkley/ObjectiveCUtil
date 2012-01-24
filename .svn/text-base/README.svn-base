@@ -1,1 +1,21 @@
-This is a repository for classes with useful utility methods that anyone can use in their projects.  Class methods should be used as much as possible.
+This is a repository for classes with useful utility methods that anyone can use 
+in their projects.  Class methods should be used as much as possible.
+
+The following is a summary of the files in this repository:
+
+- CommonUtil.* - class methods for doing everything from substring operations to MKMapView operations
+
+- DBUtil.* - singleton class to handle basic database operations
+
+- DefaultsManager.* - singleton class to handle reading/writing NSDefaults data
+
+- SunriseAndSunset.* and sunriset.* - class methods for handling sunrise 
+  and set calculations.  sunriset.* is required by SunriseAndSunset.* 
+  SunriseAndSunset.* is an objective C wrapper for DAYLEN.C's sunriset library.
+
+***********************************************************************
+If you have useful utility methods or classes you'd like to add to this
+repository, or if you have found and fixed bugs in the code housed
+here, please email me and I'll make you a contributor. 
+cberkley (at) gmail.com
+***********************************************************************

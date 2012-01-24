@@ -9,11 +9,29 @@ svn:wc:ra_dav:version-url
 V 102
 /repository/!svn/ver/36511/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/CommonUtil.m
 END
+sunriset.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/!svn/ver/36524/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/sunriset.h
+END
+SunriseAndSunset.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/!svn/ver/36523/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.h
+END
 DefaultsManager.h
 K 25
 svn:wc:ra_dav:version-url
 V 107
 /repository/!svn/ver/36517/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/DefaultsManager.h
+END
+SunriseAndSunset.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repository/!svn/ver/36523/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.m
 END
 DBUtil.h
 K 25
@@ -38,6 +56,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 107
 /repository/!svn/ver/36517/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/DefaultsManager.m
+END
+sunriset.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repository/!svn/ver/36524/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/sunriset.c
 END
 DBUtil.m
 K 25

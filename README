@@ -9,6 +9,6 @@ DBUtil.* - singleton class to handle basic database operations
 
 DefaultsManager.* - singleton class to handle reading/writing NSDefaults data
 
-SunriseAndSunset.* and sunriseset.* - class methods for handling sunrise and set calculations.  sunriseset.* is required by SunriseAndSunset.*
+SunriseAndSunset.* and sunriset.* - class methods for handling sunrise and set calculations.  sunriset.* is required by SunriseAndSunset.*
 
 

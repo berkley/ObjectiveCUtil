@@ -3,14 +3,14 @@ in their projects.  Class methods should be used as much as possible.
 
 The following is a summary of the files in this repository:
 
-CommonUtil.* - class methods for doing everything from substring operations to MKMapView zooming
+- CommonUtil.* - class methods for doing everything from substring operations to MKMapView zooming
 
-DBUtil.* - singleton class to handle basic database operations
+- DBUtil.* - singleton class to handle basic database operations
 
-DefaultsManager.* - singleton class to handle reading/writing NSDefaults data
+- DefaultsManager.* - singleton class to handle reading/writing NSDefaults data
 
-SunriseAndSunset.* and sunriset.* - class methods for handling sunrise and set calculations.  
-sunriset.* is required by SunriseAndSunset.* SunriseAndSunset.* is an objective C
-wrapper for DAYLEN.C's sunriset library.
+- SunriseAndSunset.* and sunriset.* - class methods for handling sunrise and set calculations.  
+  sunriset.* is required by SunriseAndSunset.* SunriseAndSunset.* is an objective C
+  wrapper for DAYLEN.C's sunriset library.
 
 

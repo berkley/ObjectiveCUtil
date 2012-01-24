@@ -1,1 +1,14 @@
-This is a repository for classes with useful utility methods that anyone can use in their projects.  Class methods should be used as much as possible.
+This is a repository for classes with useful utility methods that anyone can use 
+in their projects.  Class methods should be used as much as possible.
+
+The following is a summary of the files in this repository:
+
+CommonUtil.* - class methods for doing everything from substring operations to MKMapView zooming
+
+DBUtil.* - singleton class to handle basic database operations
+
+DefaultsManager.* - singleton class to handle reading/writing NSDefaults data
+
+SunriseAndSunset.* and sunriseset.* - class methods for handling sunrise and set calculations.  sunriseset.* is required by SunriseAndSunset.*
+
+

@@ -19,7 +19,7 @@ SunriseAndSunset.h
 K 25
 svn:wc:ra_dav:version-url
 V 108
-/repository/!svn/ver/36523/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.h
+/repository/!svn/ver/36525/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.h
 END
 DefaultsManager.h
 K 25
@@ -31,7 +31,7 @@ SunriseAndSunset.m
 K 25
 svn:wc:ra_dav:version-url
 V 108
-/repository/!svn/ver/36523/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.m
+/repository/!svn/ver/36525/trunk/Flightstats/iOS/trunk/FlightStatsiOSSuite/ObjectiveCUtil/SunriseAndSunset.m
 END
 DBUtil.h
 K 25

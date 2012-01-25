@@ -17,6 +17,11 @@
 #define MAXIMUM_ZOOM 20
 #define MAP_DEFAULT_SPAN 300000
 
+#define CGRECT_PART_X 0
+#define CGRECT_PART_Y 1
+#define CGRECT_PART_W 2
+#define CGRECT_PART_H 3
+
 @interface CommonUtil : NSObject
 
 ////////////////////// File Util //////////////////////////////////////////
@@ -147,4 +152,9 @@
 
 //format a date to a string using the given format
 + (NSString*)formatDate:(NSDate*)date withFormat:(NSString*)format;
+
+//change a single part of the CGRect struct.  part is one of 
+//CGRECT_PART_X, CGRECT_PART_Y, CGRECT_PART_W, CGRECT_PART_H
++ (CGRect)updatePart:(NSInteger)part OfRect:(CGRect)rect withValue:(CGFloat)val;
+
 @end

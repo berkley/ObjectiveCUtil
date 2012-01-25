@@ -500,4 +500,25 @@
     return [CommonUtil displayCurrentDateForTimezone:timezone withFormat:@"yyyy-MM-dd HH:mm ZZZZ"];
 }
 
++ (CGRect)updatePart:(NSInteger)part OfRect:(CGRect)rect withValue:(CGFloat)val
+{
+    switch (part) {
+        case CGRECT_PART_X:
+            return CGRectMake(val, rect.origin.y, rect.size.width, rect.size.height);
+            break;
+        case CGRECT_PART_Y:
+            return CGRectMake(rect.origin.x, val, rect.size.width, rect.size.height);
+            break;
+        case CGRECT_PART_W:
+            return CGRectMake(rect.origin.x, rect.origin.y, val, rect.size.height);
+            break;
+        case CGRECT_PART_H:
+            return CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, val);
+            break;
+        default:
+            return rect;
+            break;
+    }
+}
+
 @end

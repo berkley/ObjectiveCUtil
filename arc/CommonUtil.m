@@ -17,7 +17,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
     [dateFormatter setDateFormat:format];
     NSString *d = [dateFormatter stringFromDate:date];
-    [dateFormatter release];
     return d;
 }
 
@@ -148,7 +147,7 @@
         return a1;
     
     //loop through, merge results removing duplicates
-    NSMutableArray *results = [[[NSMutableArray alloc] initWithArray:a1] autorelease];
+    NSMutableArray *results = [[NSMutableArray alloc] initWithArray:a1];
     for(int i=0; i<[a2 count]; i++)
     {
         id a = [a2 objectAtIndex:i];
@@ -181,7 +180,7 @@
         return a1;
     
     //loop through, merge results removing duplicates
-    NSMutableArray *results = [[[NSMutableArray alloc] initWithArray:a1] autorelease];
+    NSMutableArray *results = [[NSMutableArray alloc] initWithArray:a1];
     for(int i=0; i<[a2 count]; i++)
     {
         NSString *a = [a2 objectAtIndex:i];
@@ -333,7 +332,7 @@
                         numSegmentsToReturn:(int)retNumSeg
 {
     //mathematics taken from http://williams.best.vwh.net/avform.htm#Crs
-    NSMutableArray *coords = [[[NSMutableArray alloc] initWithCapacity:retNumSeg + 2] autorelease];
+    NSMutableArray *coords = [[NSMutableArray alloc] initWithCapacity:retNumSeg + 2];
     double lat1 = point1.latitude;
     double lon1 = point1.longitude;
     double lat2 = point2.latitude;
@@ -350,7 +349,6 @@
     double f = 0.0;
     CLLocation *point1Loc = [[CLLocation alloc] initWithLatitude:point1.latitude longitude:point1.longitude];
     [coords addObject:point1Loc];
-    [point1Loc release];
     if(numsegs < retNumSeg)
         retNumSeg = numsegs;
     for(int i=2; i<=retNumSeg; i++)
@@ -370,14 +368,12 @@
         //        NSLog(@"lat: %f lon: %f", lat, lon);
         CLLocation *loc = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
         [coords addObject:loc];
-        [loc release];
     }
     
     if(retNumSeg == numsegs)
     { //add point2 as the last point iff retNumSeg isn't < numsegs
         CLLocation *point2Loc = [[CLLocation alloc] initWithLatitude:point2.latitude longitude:point2.longitude];
         [coords addObject:point2Loc];
-        [point2Loc release];
     }
     
     return coords;
@@ -491,7 +487,6 @@
     [formatter setDateFormat:format];
     NSDate *currentDate = [NSDate date];
     NSString *currentDateStr = [formatter stringFromDate:currentDate];
-    [formatter release];
     return currentDateStr;
 }
 
@@ -519,6 +514,13 @@
             return rect;
             break;
     }
+}
+
++ (NSInteger)getMinuteFromDate:(NSDate*)date
+{
+    unsigned int unitFlags = NSMinuteCalendarUnit;
+    NSDateComponents *conversionInfo = [[NSCalendar currentCalendar] components:unitFlags fromDate:date];
+    return [conversionInfo minute];
 }
 
 @end

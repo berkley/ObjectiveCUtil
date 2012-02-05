@@ -157,4 +157,7 @@
 //CGRECT_PART_X, CGRECT_PART_Y, CGRECT_PART_W, CGRECT_PART_H
 + (CGRect)updatePart:(NSInteger)part OfRect:(CGRect)rect withValue:(CGFloat)val;
 
+//return the minutes of any date
++ (NSInteger)getMinuteFromDate:(NSDate*)date;
+
 @end

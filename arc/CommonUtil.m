@@ -523,4 +523,38 @@
     return [conversionInfo minute];
 }
 
++ (NSString*)createStaticMapURLForLocation:(CLLocation*)location
+{
+    //markers=color:red%7Clabel:X%7C45.5,-122.5
+    NSString *marker = [NSString stringWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+    NSString *url = [NSString stringWithFormat:@"%@%@", GOOGLE_STATIC_MAP_BASE_URL, marker];
+    NSLog(@"url: %@", url);
+    return url;
+}
+
++ (NSString*)getShortenedURLForURL:(NSString*)url
+{
+    NSString *urlString = [NSString stringWithFormat:@"http://tinyurl.com/api-create.php?url=%@", 
+                           [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSURL *u = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:u];
+    [request setHTTPMethod:@"GET"];
+    NSError *error;
+    NSURLResponse *response;
+    NSData *receivedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    if (error) 
+    {
+        NSLog(@"Error: %@", error);
+    } 
+    else 
+    {
+        NSString *receivedString = [[NSString alloc]initWithData:receivedData encoding:NSUTF8StringEncoding];
+        NSLog(@"Request sent. %@", receivedString);
+        return receivedString;
+    }  
+    return nil;
+}
+
 @end

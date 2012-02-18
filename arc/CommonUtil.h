@@ -22,6 +22,9 @@
 #define CGRECT_PART_W 2
 #define CGRECT_PART_H 3
 
+#define GOOGLE_STATIC_MAP_BASE_URL @"http://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x400&sensor=true&markers=color:red|"
+
+
 @interface CommonUtil : NSObject
 
 ////////////////////// File Util //////////////////////////////////////////
@@ -102,7 +105,8 @@
 //return YES if a string is nil or empty (@"").  The string is trimmed, so @" " will return YES
 + (BOOL)stringNullOrEmpty:(NSString*)str;
 
-
+//retrieve a shortened url for url
++ (NSString*)getShortenedURLForURL:(NSString*)url;
 
 //////////////////// Mapping /////////////////////////////////////////////
 
@@ -140,7 +144,8 @@
                                      toPoint:(CLLocationCoordinate2D)point2
                                   forMapView:(MKMapView*)mapView;
 
-
+//draw a google static map with the given location
++ (NSString*)createStaticMapURLForLocation:(CLLocation*)location;
 
 ////////////////////  Date and Time  ///////////////////////////////////////
 
